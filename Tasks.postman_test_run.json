@@ -1,0 +1,257 @@
+{
+	"id": "a457cc6e-bd8b-47da-bacc-37a0cef4b1b3",
+	"name": "Tasks",
+	"timestamp": "2023-12-04T18:47:54.457Z",
+	"collection_id": "28798981-a7f2ea21-53ab-4676-b189-f9b114c241c6",
+	"folder_id": 0,
+	"environment_id": "28798981-29cd541e-ef4f-40fe-8e30-8261868b2f85",
+	"totalPass": 8,
+	"delay": "5",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-12-04T18:47:50.753Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "47df4348-c916-4d67-8171-3c92407f08a0",
+			"name": "Create user3-task",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/user-tasks",
+			"time": 382,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				382
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "d62a6d4f-31d5-4cec-9424-9c98651914d9",
+			"name": "Create user-task admin",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/user-tasks",
+			"time": 608,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				608
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "b51a876b-e1f8-4c81-b0b4-0e987c137c0c",
+			"name": "Create task",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 540,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				540
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "f6c491ad-ef4a-45d7-abdb-63579d9eaa65",
+			"name": "Change task admin",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks/1852",
+			"time": 701,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				701
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "0474aee2-bca2-4f03-b5ab-d2fdbcf43a90",
+			"name": "find task id",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks/1601",
+			"time": 322,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				322
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "11c321ee-e997-46b5-b2cc-1ad69361bd9b",
+			"name": "Delete task user",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/user-tasks/1601",
+			"time": 427,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				427
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f985a402-9b72-4fa3-b82b-2ac7f78ce4c5",
+			"name": "Delete task admin",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks/1851",
+			"time": 194,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3174,
+	"collection": {
+		"requests": [
+			{
+				"id": "47df4348-c916-4d67-8171-3c92407f08a0",
+				"method": "POST"
+			},
+			{
+				"id": "d62a6d4f-31d5-4cec-9424-9c98651914d9",
+				"method": "POST"
+			},
+			{
+				"id": "b51a876b-e1f8-4c81-b0b4-0e987c137c0c",
+				"method": "POST"
+			},
+			{
+				"id": "f6c491ad-ef4a-45d7-abdb-63579d9eaa65",
+				"method": "PUT"
+			},
+			{
+				"id": "0474aee2-bca2-4f03-b5ab-d2fdbcf43a90",
+				"method": "GET"
+			},
+			{
+				"id": "11c321ee-e997-46b5-b2cc-1ad69361bd9b",
+				"method": "DELETE"
+			},
+			{
+				"id": "f985a402-9b72-4fa3-b82b-2ac7f78ce4c5",
+				"method": "DELETE"
+			}
+		]
+	}
+}
